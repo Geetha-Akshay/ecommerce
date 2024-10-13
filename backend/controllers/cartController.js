@@ -61,7 +61,7 @@ const getUserCart = async(req,res) => {
         res.status(200).json({success:true,cartData:userData.cartData})
     }
     catch(error){
-        console.log(error)
+        console.log("hi",error)
         res.status(400).json({success:false,message:error.message})
     }
 }
